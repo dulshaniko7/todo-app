@@ -1,0 +1,22 @@
+<h1 class="display-3">MY TODO'S</h1>
+
+<div class="container">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">DESCRIPTION</th>
+      <th scope="col">DONE</th>
+      <th scope="col">DATE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let t of todos">
+  <td>{{t.id}}</td>
+  <td>{{t.des}}</td>
+  <td>{{t.done}}</td>
+  <td>{{t.date| date}}</td>
+  </tr>
+</table>
+</div>
+
